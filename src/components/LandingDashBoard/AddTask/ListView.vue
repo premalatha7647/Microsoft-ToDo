@@ -4,7 +4,7 @@
         <PlusOutlined :style="{ fontSize: '16px', color: '#08c' }" />
         <a-flex class="taskList-div" align="flex-start" justify-content="flex-start" vertical gap="2">
             <span>{{ task }}</span>
-            <span>{{ task }}</span>
+            <span>Task</span>
         </a-flex>
     </a-flex>
 </template>
