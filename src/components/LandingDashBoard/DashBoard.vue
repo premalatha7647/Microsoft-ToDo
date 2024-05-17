@@ -5,9 +5,9 @@
         </a-layout-header>
         <a-layout>
             <LayoutSlider></LayoutSlider>
-            <a-layout style="padding: 0 24px 24px">
-                <a-layout-content :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }">
-                    <AddTask></AddTask>
+            <a-layout style="padding: 24px 24px 24px">
+                <a-layout-content :style="{ padding: '24px', margin: 0, minHeight: '280px' }">
+                    <AddTaskContainer></AddTaskContainer>
                 </a-layout-content>
             </a-layout>
         </a-layout>
@@ -17,7 +17,7 @@
 import { ref } from 'vue';
 import DashBoardHeader from '@/components/LandingDashBoard/DashBoardHeader.vue'
 import LayoutSlider from '@/components/LandingDashBoard/LayoutSlider.vue'
-import AddTask from '@/components/LandingDashBoard/AddTask/AddTaskContainer.vue'
+import AddTaskContainer from '@/components/LandingDashBoard/AddTask/AddTaskContainer.vue'
 
 </script>
 <style scoped>

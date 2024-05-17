@@ -36,7 +36,7 @@
   --section-gap: 160px;
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
     --color-background: var(--vt-c-black);
     --color-background-soft: var(--vt-c-black-soft);
@@ -48,8 +48,45 @@
     --color-heading: var(--vt-c-text-dark-1);
     --color-text: var(--vt-c-text-dark-2);
   }
-} */
+}
 
+:root {
+  --bg-primary: #fff;
+  --bg-secondary: #faf9f8;
+  --bg-tertiary: #fff;
+  --bg-primary-accent: #faf9f8;
+  --bg-hover: #f5f5f5;
+  --bg-hover-secondary: #fdfdfd;
+  --bg-hover-tertiary: #f5f5f5;
+  --bg-hover-grid: #c8c6c4;
+  --bg-active: #eff6fc;
+  --bg-active-secondary: #f3f2f1;
+  --bg-active-tertiary: #f3f2f1;
+  --bg-separator: #e1dfdd;
+  --bg-border: #e1dfdd;
+  --bg-scrollbar: #8a8886;
+  --bg-shadow: rgba(0, 0, 0, 0.1);
+  --bg-brand: #2564cf;
+  --bg-brand-hover: #215aba;
+  --bg-brand-hover-secondary: #8c93a5;
+  --bg-brand-secondary: #ecf6fd;
+  --bg-brand-disable: #b7d7f6;
+  --font-color-primary: #292827;
+  --font-color-secondary: #605e5c;
+  --font-color-tertiary: #605e5c;
+  --font-color-warning: #a80000;
+  --font-color-brand: #2564cf;
+  --font-color-disable: #a19f9d;
+  --bg-ms-planner: #31752f;
+  --bg-ms-one-note: #7719aa;
+  --bg-ms-excel: #107c41;
+  --bg-ms-word: #185abd;
+  --bg-ms-power-point: #c43e1c;
+  --bg-ms-teams: #6355a8;
+  --bg-ms-loop: #8230ff;
+  --bg-warning: #fff4ce;
+  --bg-error: #fed9cc;
+}
 *,
 *::before,
 *::after {
