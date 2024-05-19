@@ -14,7 +14,6 @@
     </a-layout>
 </template>
 <script lang="ts" setup>
-import { ref } from 'vue';
 import DashBoardHeader from '@/components/LandingDashBoard/DashBoardHeader.vue'
 import LayoutSlider from '@/components/LandingDashBoard/LayoutSlider.vue'
 import AddTaskContainer from '@/components/LandingDashBoard/AddTask/AddTaskContainer.vue'

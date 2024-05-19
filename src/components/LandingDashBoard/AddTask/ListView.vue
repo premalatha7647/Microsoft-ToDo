@@ -1,5 +1,5 @@
 <template>
-    <a-flex class="addedList" align="center" justify-content="flex-start" gap="14"
+    <a-flex class="addedList listView" align="center" justify-content="flex-start" gap="14"
         v-for="(task, index) of props.taskList" :key="'task' + index">
         <PlusOutlined :style="{ fontSize: '16px', color: '#08c' }" />
         <a-flex class="taskList-div" align="flex-start" justify-content="flex-start" vertical gap="2">

@@ -4,19 +4,39 @@
             <PlusOutlined :style="{ fontSize: '16px', color: '#08c' }" />
             <a-input v-model:value="newTask" :bordered="false" placeholder="Add a task" @keyup.enter="submit" />
         </a-flex>
-        <ListView class="listView" :taskList="addList"></ListView>
+        <ListView :taskList="addList"></ListView>
     </a-flex>
 </template>
 <script setup lang="ts">
 import { PlusOutlined } from '@ant-design/icons-vue';
 import { ref } from 'vue';
-import ListView from '@/components/LandingDashBoard/AddTask/ListView.vue'
+import ListView from '@/components/LandingDashBoard/AddTask/ListView.vue';
+import service from '@/service/service';
+import { message } from 'ant-design-vue';
 const newTask = ref<string>('');
 const addList = ref<string[]>([]);
-const submit = () => {
+
+const submit = async () => {
+    addTask();
     addList.value?.push(newTask.value);
     newTask.value = ''
 };
+
+async function addTask() {
+    await service.addTask(newTask.value).then((response) => {
+        console.log(response)
+    }).catch(
+        message.error({
+            content: () => 'This is a prompt message with custom className and style',
+            class: 'custom-class',
+            style: {
+                position: 'fixed',
+                marginBottom: '20vh',
+            },
+
+        }, 3000)
+    )
+}
 </script>
 <style scoped>
 .taskContainer,
